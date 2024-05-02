@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latest NHL Scores</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="bg">
+            <div class="container">
+        {% for key, value in latest_games_data.items() %}
+        <div class="scoreboard">
+        <h2>{{ value ["series_game_number"]}}</h2>
+        <div class="game-result">
+        <strong>{{ value["scoreboard"]}}</strong>
+        </div>
+        <h3 class="teams">{{ value["home_team"]}}</h3>
+        <img src="{{ value['home_team_logo_url']}}" alt="">
+        <h4> {{value ["home_team_score"]}}</h4>
+        <h3 class="teams"> {{ value["away_team"] }}</h3>
+        <img src="{{ value['away_team_logo_url']}}" alt="">
+        <h4>{{ value ["away_team_score"]}}</h4>
+    
+    </div>
+    {% endfor %} 
+</div>
+        </div>
+</div>
+  
+    </body>
+</html>

@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: chirp-heavy;
+    src: url(./fonts/chirp-heavy-web.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: chirp-bold;
+    src: url(./fonts/chirp-bold-web.ttf) format('truetype');
+    font-weight: normal;
+}
+
+
+.bg{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    background-color: #ffff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.scoreboard{
+    border: 1px solid #adadb165;
+    border-radius: 5%;
+    margin: 1%;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+
+
+.scoreboard .game-result{
+    position: absolute;
+    display: inline-block;
+    margin-top: -4%;
+    margin-left: 7%;
+    background-color: #adadb165;
+    padding: 0.5%;
+    border-radius: 10px;
+}
+
+.scoreboard strong{
+    font-size: 12px;
+    font-family: chirp-heavy;
+}
+
+.scoreboard h2{
+    margin-bottom: 20%;
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: chirp-heavy;
+}
+
+.scoreboard h3 {
+    margin-left: 35%;
+    font-size: 15px;
+    font-family: chirp-heavy;
+}
+
+.scoreboard .teams{
+    margin-left: 35%;
+}
+.scoreboard h4{
+    float: right;
+    margin-top: -12%;
+    font-family: chirp-heavy;
+    margin-right: 2%;
+}
+
+.scoreboard img {
+    width: 20%;
+    height: 20%;
+    margin-top: -13%;
+    margin-bottom: 10%;
+}
