@@ -25,9 +25,10 @@ def index():
             
                 if home_team_score > away_team_score:
                     scoreboard = f"{home_team} DEF. {away_team} {home_team_score}-{away_team_score}"
-                else:
+                elif away_team_score > home_team_score:
                     scoreboard = f"{away_team} DEF. {home_team} {away_team_score}-{home_team_score}"
-                
+                else:
+                    scoreboard = f"Game is tied."
                 latest_games_data[series_key] = {'home_team': home_team,
                 'away_team': away_team,
                 'series_game_number': series_game_number,
