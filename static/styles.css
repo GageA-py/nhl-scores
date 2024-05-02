@@ -15,18 +15,18 @@
 .bg{
     background-color: black;
     height: 100%;
-    width: 100%;
 }
 
 .container {
     background-color: #ffff;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
 }
 .scoreboard{
     border: 1px solid #adadb165;
     border-radius: 5%;
+    align-items: center;
     margin: 1%;
     width: 25%;
     box-sizing: border-box;
